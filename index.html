@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - LocalStorage Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestão de Contatos Base</h1>
+    </header>
+    
+    <main>
+        <section class="form-container">
+            <form id="cadastroForm">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" required placeholder="Digite o nome">
+
+                <label for="email">E-mail Profissional:</label>
+                <input type="email" id="email" required placeholder="Digite o email">
+
+                <button type="submit">Gravar Dados</button>
+            </form>
+        </section>
+
+        <section class="lista-container">
+            <h2>Relatório de Contatos em Memória</h2>
+            <ul id="listaDados"></ul>
+            <button id="btnLimpar" class="btn-perigo">Purgar Todos os Registros</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
